@@ -56,7 +56,7 @@ class MySQLDatabase:
         if len(kwargs.items()) !=0:
             for operator,regex in kwargs.items():
                 #delete numbers from string operator
-                operator = ''.join([i for i in s if not i.isdigit()])
+                operator = ''.join([i for i in operator if not i.isdigit()])
                 sql_statement += ' ' + operator + " table_name regexp '" + regex + "'"
 
         tables = pd.read_sql(sql_statement,self.engine)      
