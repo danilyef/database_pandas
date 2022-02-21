@@ -2,7 +2,6 @@ import numpy as np
 from sqlalchemy.engine.url import URL
 import pandas as pd
 from sqlalchemy import create_engine
-import re
 
 
 #2.Database class
