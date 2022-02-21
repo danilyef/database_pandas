@@ -7,8 +7,8 @@ setup(
   description = 'Package for working with databases in Python, based on pandas and sqlalchemy.',  
   author = 'Daniil Yefimov',                  
   author_email = 'daniil.yefimov92@gmail.com',     
-  url = 'https://github.com/danilyef/database',   
-  download_url = 'https://github.com/danilyef/database/archive/refs/tags/v.0.1.tar.gz',    
+  url = 'https://github.com/danilyef/database_pandas',   
+  download_url = 'https://github.com/danilyef/database_pandas/archive/refs/tags/v.0.1.tar.gz',    
   keywords = ['Database', 'MySQL', 'Python','pandas'],   
   install_requires=[            
           'numpy',
