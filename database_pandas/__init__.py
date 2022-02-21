@@ -1,1 +1,1 @@
-from database.mysql_database import Database
+from database_pandas.mysql_database import MySQLDatabase
