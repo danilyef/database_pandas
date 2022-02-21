@@ -1,7 +1,7 @@
 from distutils.core import setup
 setup(
-  name = 'database-pandas',         
-  packages = ['database-pandas'],  
+  name = 'database_pandas',         
+  packages = ['database_pandas'],  
   version = '0.1',      
   license='MIT',        
   description = 'Package for working with databases in Python, based on pandas and sqlalchemy.',  
