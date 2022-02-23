@@ -12,12 +12,12 @@ Right now consists of 1 class only(for MySQL database):
 You can import class the following way: 
 from database_pandas import MySQLDatabase
 
-MySQLDatabase class consists of the following arguments(user-defined)
-1.database - schema name.
-2.drivername - in this cas mysql.
-3.username - username of the database.
-4.password - password to the database.
-5.host - host of the database.
+MySQLDatabase class consists of the following arguments(user-defined):
+1. database - schema name.
+2. drivername - in this cas mysql.
+3. username - username of the database.
+4. password - password to the database.
+5. host - host of the database.
 
 MySQLDatabase class consists of following functions:
 1. get_url - retrieves back connection string to your database.
