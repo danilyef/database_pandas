@@ -72,7 +72,7 @@ class MySQLDatabase:
         self.url = URL(**
         {
             'database': self.database,
-            'drivername': self.drivername,
+            'drivername': self._drivername,
             'username': self.username,
             'password': self.password,
             'host': self.host,
@@ -174,3 +174,9 @@ class MySQLDatabase:
         tables = tables.iloc[:,0].to_numpy()
         
         return tables
+
+
+    def alter_table(self,sql_statement):
+        with self.engine.connect() as con:
+            con.execute(sql_statement)
+
