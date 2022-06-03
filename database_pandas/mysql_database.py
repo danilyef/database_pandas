@@ -176,7 +176,7 @@ class MySQLDatabase:
         return tables
 
 
-    def alter_table(self,sql_statement):
+    def sql_statement(self,sql_statement):
         with self.engine.connect() as con:
             con.execute(sql_statement)
 
