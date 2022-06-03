@@ -39,14 +39,14 @@ for more detailed information look use name_of_function.__doc__
 
 **Initialisation and data base connection:**
 
-```
+```python
 from database_pandas import MySQLDatabase
 your_database = MySQLDatabase(database = database_name,drivername = 'mysql',username = db_username,password = db_password,host = db_host)
 your_database.connect_database()
 ```
 
 **Performing select * from:**
-```
+```python
 your_database.select_sql('select * from table')
 ```
 
@@ -66,7 +66,7 @@ Function consists of the following arguments:
 
         4.index - Write DataFrame index as a column. 
 
-```
+```python
 your_database.insert_sql(data_frame,'table_name',if_exists = 'replace')
 ```
 
@@ -78,6 +78,6 @@ be 'or1'.
 
 Example: 
 
-```
+```python
 tables = your_database.get_tables_regex(and1 = 'some_regex',and2 = 'some_regex')
 ```
