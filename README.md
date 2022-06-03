@@ -54,17 +54,17 @@ your_database.select_sql('select * from table')
 
 Function consists of the following arguments:
         
-        1.data_frame - which dataframe to insert.
-        2.sql_table - in which table to insert.
-        3.if_exists(default = 'append'):
-        
-        possible values: ‘fail’, ‘replace’, ‘append’}
-        How to behave if the table already exists.
-        - fail: Raise a ValueError.
-        - replace: Drop the table before inserting new values.
-        - append: Insert new values to the existing table.
+1.data_frame - which dataframe to insert.
+2.sql_table - in which table to insert.
+3.if_exists(default = 'append'):
 
-        4.index - Write DataFrame index as a column. 
+possible values: ‘fail’, ‘replace’, ‘append’}
+How to behave if the table already exists.
+- fail: Raise a ValueError.
+- replace: Drop the table before inserting new values.
+- append: Insert new values to the existing table.
+
+4.index - Write DataFrame index as a column. 
 
 ```python
 your_database.insert_sql(data_frame,'table_name',if_exists = 'replace')
