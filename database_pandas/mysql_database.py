@@ -51,9 +51,9 @@ class MySQLDatabase:
     4.password - password to the database.
     5.host - host of the database.
     """
-    def __init__(self,database,drivername,username,password,host):
+    def __init__(self,database,username,password,host):
         self.database = database
-        self.drivername = drivername
+        self._drivername = 'mysql'
         self.username = username
         self.password = password
         self.host = host
