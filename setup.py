@@ -2,7 +2,7 @@ from distutils.core import setup
 setup(
   name = 'database_pandas',         
   packages = ['database_pandas'],  
-  version = '0.1.3',      
+  version = '1.0.0',      
   license='MIT',        
   description = 'Package for working with databases in Python, based on pandas and sqlalchemy.',  
   author = 'Daniil Yefimov',                  
@@ -16,7 +16,7 @@ setup(
           'sqlalchemy'
       ],
   classifiers=[
-    'Development Status :: 3 - Alpha',      
+    'Development Status :: 3 - Beta',      
     'Intended Audience :: Developers',     
     'License :: OSI Approved :: MIT License',   
     'Programming Language :: Python :: 3',      
