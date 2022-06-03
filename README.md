@@ -55,7 +55,9 @@ your_database.select_sql('select * from table')
 Function consists of the following arguments:
         
 1.data_frame - which dataframe to insert.
+
 2.sql_table - in which table to insert.
+
 3.if_exists(default = 'append'):
 
 possible values: ‘fail’, ‘replace’, ‘append’}
