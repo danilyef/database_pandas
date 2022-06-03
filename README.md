@@ -41,7 +41,7 @@ for more detailed information look use name_of_function.__doc__
 
 ```python
 from database_pandas import MySQLDatabase
-your_database = MySQLDatabase(database = database_name,drivername = 'mysql',username = db_username,password = db_password,host = db_host)
+your_database = MySQLDatabase(database = database_name,username = db_username,password = db_password,host = db_host)
 your_database.connect_database()
 ```
 
