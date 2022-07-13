@@ -57,8 +57,7 @@ class MySQLDatabase:
         self.username = username
         self.password = password
         self.host = host
-        self.query = {'charset': 'utf8','auth_plugin':'mysql_native_password'}
-
+        self.query = {'charset': 'utf8'}
         
 
     def get_url(self):
