@@ -38,6 +38,7 @@ import numpy as np
 from sqlalchemy.engine.url import URL
 import pandas as pd
 from sqlalchemy import create_engine
+import mysql.connector
 
 
 #2.Database class
@@ -53,7 +54,7 @@ class MySQLDatabase:
     """
     def __init__(self,database,username,password,host):
         self.database = database
-        self._drivername = 'mysql'
+        self._drivername = 'mysql+mysqlconnector'
         self.username = username
         self.password = password
         self.host = host
@@ -70,7 +71,7 @@ class MySQLDatabase:
         your_database.get_url()
 
         """
-        self.url = URL(**
+        self.url = URL.create(**
         {
             'database': self.database,
             'drivername': self._drivername,
