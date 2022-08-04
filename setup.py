@@ -13,7 +13,8 @@ setup(
   install_requires=[            
           'numpy==1.21.6',
           'pandas==1.3.5',
-          'sqlalchemy==1.4.39'
+          'sqlalchemy==1.4.39',
+          'mysql-connector-python==8.0.30'
       ],
   classifiers=[
     'Development Status :: 5 - Production/Stable',      
